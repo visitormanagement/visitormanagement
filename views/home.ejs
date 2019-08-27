@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Admin</title>
+<link rel="stylesheet" href="/css/home.css" type="text/css">
+</head>
+<body>
+   
+    <div class="box1">
+<table class="table table-striped table-bordered table-hover" id="tab">
+    
+<thead class="thead-dark">
+<tr>
+<th scope="col">S.no</th>
+<th scope="col">Name</th>
+<th scope="col">Email-id</th>
+<th scope="col">Age</th>
+<th scope="col">Gender</th>
+<th scope="col">Number</th>
+<th scope="col">Purpose of visiting</th>
+<th scope="col">To meet</th>
+<th scope="col">From</th>
+<th scope="col">In-time</th>
+</tr>
+</thead>
+<tbody>
+<% for(var i=0;i<users.length;i++){ %>
+<tr>
+<th scope="row"><%= users.indexOf(users[i]) + 1 %></th>
+<td> <%= users[i].name %> </td>
+<td> <%= users[i].email %> </td>
+<td> <%= users[i].age %> </td>
+<td> <%= users[i].gender %> </td>
+<td> <%= users[i].number %> </td>
+<td> <%= users[i].purpose %> </td>
+<td> <%= users[i].meet %> </td>
+<td> <%= users[i].from %> </td>
+<td> <%= users[i].intime %> </td>
+
+</tr>
+<% } %>
+</tbody>
+</table>
+</div>
+</body>
+</html>
