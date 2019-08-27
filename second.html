@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Visitor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="/css/second.css" type="text/css">
+    </head>
+    <body>
+        <div class="first">
+            <form action="/addfile" method="POST">
+                    <p>Name</p>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <br>
+                    <p>Email</p>
+                <input type="email" name="email" placeholder="Enter your Email" required>
+                <br>
+
+                <p>Purpose of visit</p>
+                <br>
+                <select name="purpose" required>
+                        <option value="Meeting">Meeting</option>
+                        <option value="Office">Office-Room</option>
+                        <option value="Symposium">Symposium</option>
+                        <option value="Conference">Conference</option>
+                        <option value="other">other</option>
+                      </select>
+                <br>
+                <br>
+                
+                <p>To meet</p>
+                <input type="text" name="meet" required>
+                <br>
+                <p>From</p>
+                <input type="text" name="from" required>
+                <br>
+              
+                <br>
+               <!--
+                <p>IN-TIME</p>
+                <input type="text" name="intime" required>
+                <br>
+                <br>
+                -->
+
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+        
+    </body>
+</html>
